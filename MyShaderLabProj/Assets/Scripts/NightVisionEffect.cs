@@ -4,10 +4,12 @@ using System.Collections;
 public class NightVisionEffect : MonoBehaviour 
 {
 	#region shader parameters
+	public bool isEnable = false;
+	
 	public Shader nightVisionShader;
-	public float contrast = 2.0f;
-	public float brightness = 1.0f;
-	public Color nightVisionColor = Color.white;
+	public float contrast = 1.0f;
+	public float brightness = 0.2f;
+	public Color nightVisionColor = Color.green;
 	
 	public Texture2D vignetteTexture;
 	public Texture2D scanLineTexture;
@@ -30,9 +32,17 @@ public class NightVisionEffect : MonoBehaviour
 		curMaterial = new Material(nightVisionShader);
 	}
 	
+	public void ToggleEnable()
+	{
+		if(isEnable)
+			isEnable = false;
+		else
+			isEnable = true;
+	}
+	
 	void OnRenderImage(RenderTexture src, RenderTexture dst)
 	{
-		if(nightVisionShader != null)
+		if(nightVisionShader != null && isEnable)
 		{
 				curMaterial.SetFloat("_Contrast", contrast);
 				curMaterial.SetFloat("_Brightness", brightness);
