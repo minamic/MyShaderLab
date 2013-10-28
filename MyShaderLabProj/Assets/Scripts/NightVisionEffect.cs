@@ -20,7 +20,7 @@ public class NightVisionEffect : MonoBehaviour
 	public float noiseYSpeed = 100.0f;
 	
 	public  float distortion = 0.2f;
-	public float scale = 0.8f;
+	public float scale = 1.0f;
 	
 	private float randomValue = 0.0f;
 	private Material curMaterial;

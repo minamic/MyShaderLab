@@ -1,9 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NightVisionEffect.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shaders\OldFilmEffect.shader">
     <Files>
-      <File FileName="Assets\Shaders\NightVisionEffect.shader" Line="1" Column="3" />
-      <File FileName="Assets\Scripts\NightVisionEffect.cs" Line="10" Column="45" />
+      <File FileName="Assets\Scripts\OldFilmEffect.cs" Line="71" Column="43" />
+      <File FileName="Assets\Shaders\NightVisionEffect.shader" Line="20" Column="12" />
+      <File FileName="Assets\Scripts\NightVisionEffect.cs" Line="33" Column="3" />
+      <File FileName="Assets\Scripts\CameraController.cs" Line="4" Column="20" />
+      <File FileName="Assets\Shaders\OldFilmEffect.shader" Line="9" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

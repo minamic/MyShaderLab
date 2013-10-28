@@ -78,6 +78,5 @@ Shader "Custom/NightVisionEffect"
 	        }
 	        ENDCG
 	    }
-	} 
-	FallBack "Diffuse"
+	}
 }
